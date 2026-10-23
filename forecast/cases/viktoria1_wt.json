@@ -1,0 +1,31 @@
+{
+  "trial": "Celcuity VIKTORIA-1 PIK3CA wild-type cohort (NCT05501886), PFS triplet vs fulvestrant",
+  "as_of": "2025-07-27",
+  "leakage_note": "Result was public before the model's training cutoff; this checks mechanics, not predictive skill.",
+  "method_a": {
+    "prior": 0.48,
+    "prior_note": "Oncology phase 3 base rate (BIO, approximate)",
+    "factors": [
+      {"name": "weak control arm", "factor": 1.5},
+      {"name": "prior data (phase 1b Arm D)", "factor": 1.4},
+      {"name": "drug class", "factor": 1.1},
+      {"name": "PFS at final analysis", "factor": 1.2},
+      {"name": "sponsor signal (slip)", "factor": 0.9}
+    ]
+  },
+  "method_b": {
+    "events": 200,
+    "events_note": "Assumed; not public before readout",
+    "scenarios": [
+      {"name": "no real effect", "hr": 1.0, "weight": 0.2},
+      {"name": "modest", "hr": 0.75, "weight": 0.35},
+      {"name": "large", "hr": 0.5, "weight": 0.45}
+    ],
+    "bars": [
+      {"z": 2.24, "weight": 1.0, "note": "alpha 0.05 split over two primary comparisons"}
+    ]
+  },
+  "outcome": 1,
+  "outcome_note": "28 Jul 2025: triplet HR 0.24 (9.3 vs 2.0 mo), doublet HR 0.33",
+  "benchmarks": {"oncology base rate": 0.48, "coin flip": 0.5}
+}

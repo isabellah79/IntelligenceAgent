@@ -1,0 +1,28 @@
+{
+  "trial": "BriaCell Bria-ABC phase 3 (NCT06072612), OS at 144-death interim",
+  "as_of": "2026-10-23",
+  "method_a": {
+    "prior": 0.2609,
+    "prior_note": "Cancer vaccine phase 3s: 6 of 23 met primary endpoint",
+    "factors": [
+      {"name": "interim, not final", "factor": 0.5},
+      {"name": "prior data (single-arm)", "factor": 0.7},
+      {"name": "sponsor signals", "factor": 0.9},
+      {"name": "market signal", "factor": 0.9}
+    ]
+  },
+  "method_b": {
+    "events": 144,
+    "scenarios": [
+      {"name": "no real effect", "hr": 1.0, "weight": 0.6},
+      {"name": "modest (TROPiCS-02)", "hr": 0.8, "weight": 0.3},
+      {"name": "large (ASCENT)", "hr": 0.65, "weight": 0.1}
+    ],
+    "bars": [
+      {"z": 2.963, "weight": 0.8, "note": "O'Brien-Fleming at ~50% information"},
+      {"z": 1.96, "weight": 0.2, "note": "looser bar / near-final"}
+    ]
+  },
+  "outcome": null,
+  "benchmarks": {"vaccine class prior": 0.2609, "oncology base rate": 0.48}
+}

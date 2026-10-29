@@ -1,0 +1,6 @@
+{
+  "provider": "vertex",
+  "project": "rag-project-494802",
+  "location": "global",
+  "model": "gemini-3.8-flash"
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BerryBio · Treatment strategy lab</title>
+  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header><a href="/" class="brand"><span class="brand-icon">b</span> berrybio <span class="brand-light">/ intelligence</span></a><span class="pilot">MILESTONE 01 · RESEARCH DEMO</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">THE NEXT TREATMENT DECISION</p><h1>Evidence for the<br>path ahead.</h1><p class="lede">Compare treatment strategies in HR+/HER2− metastatic breast cancer after endocrine therapy + a CDK4/6 inhibitor.</p></div><aside class="intro-note"><span class="small-label">BUILT FOR THE DISCUSSION</span><p>Understand the trade-offs.<br>Inspect the evidence.<br>Keep clinical judgment in view.</p><div id="evidence-date">Loading evidence library…</div></aside></section>
+    <div class="workspace">
+      <aside class="case-panel"><details class="context-editor"><summary>Edit the case and PFS forecast assumptions</summary><div class="panel-heading"><span class="step">01</span><h2>Clinical context</h2></div>
+        <p class="muted">Fictional cases only. Changing a field updates the comparison when you run it.</p>
+        <label>Example scenario<select id="preset"><option value="base">ESR1 + PIK3CA · HER2-low</option><option value="unknown">Biomarkers not yet available</option><option value="later">Prior chemotherapy · later line</option></select></label>
+        <form id="case-form">
+          <div id="fields"></div>
+          <details class="weight-controls" hidden><summary>Legacy discussion-score weights</summary><div id="weight-fields"></div><button id="reset-weights" type="button" class="secondary">Use priority defaults</button></details>
+          <fieldset class="endpoint-controls"><legend>Provisional PFS forecast · analyst assumptions</legend><label>Progression/death events<input id="endpoint-events" type="number" min="1" max="1000000" value="200" required></label><label>Statistical threshold (z)<input id="endpoint-z" type="number" min="0.01" max="10" step="0.01" value="1.96" required></label><label>Starting prior · analyst assumption<input id="endpoint-prior" type="number" min="0.000001" max="0.999999" step="any" value="0.5" placeholder="Blank: method B conditional power only"></label><label>Evidence adjustment strength (0–1)<input id="endpoint-evidence-strength" type="number" min="0" max="1" step="0.1" value="0.5" required></label><label>Method A weight (0–1)<input id="endpoint-blend" type="number" min="0" max="1" step="0.1" value="0.5" required></label><label class="check-label"><input id="endpoint-source-effect" type="checkbox" checked>Use the published HR as a hypothetical true effect</label><p class="muted">Starting prior 50%, event count, evidence multipliers and A/B blend are provisional modeling choices. Literature supports the findings, not these numerical weights. Method B is a retrospective source-effect power illustration; final scores are uncalibrated and are not patient-benefit probabilities.</p></fieldset>
+          <label>Output mode<select id="mode"><option value="curated">Curated evidence + transparent rules</option><option value="model">Model synthesis of curated evidence</option></select></label>
+          <p id="model-status" class="muted"></p>
+          <button class="primary" id="run" type="submit">Compare strategies <span>↗</span></button>
+        </form>
+        <p class="privacy">Runs, scores, model judgments and reviewer comments are saved locally. Model mode sends the fictional case and evidence to the configured provider (Vertex AI / Google or Anthropic).</p></details>
+      </aside>
+      <section class="results-panel" aria-label="Treatment comparison">
+        <div class="results-heading"><div><p class="eyebrow">AFTER ENDOCRINE THERAPY + CDK4/6 PROGRESSION</p><h2>Next-treatment comparison.</h2></div><button id="export" class="secondary" disabled>Export review JSON ↓</button></div>
+        <p id="error" role="alert" class="error" hidden></p>
+        <div id="busy" role="status" class="busy" hidden>Comparing the case with the evidence library…</div>
+        <div id="stale" class="notice" hidden>Case details changed. Run the comparison to refresh these results.</div>
+        <div id="result" aria-live="polite"><div class="empty"><span>↗</span><h3>One case. Several defensible paths.</h3><p>Run the example to see matching branches, conditional options and later-line strategies—with sources you can inspect.</p></div></div>
+      </section>
+    </div>
+    <section class="forecast-lab" id="forecast-lab"><div class="panel-heading"><span class="step">03</span><h2>Experimental trial forecast</h2></div><p class="muted">The original forecast.py: reference-class odds adjustments + effect-size scenarios. Estimates the probability that a specified trial meets its endpoint. It has zero weight in treatment priority and does not estimate patient benefit.</p>
+      <div class="forecast-layout"><form id="forecast-form"><label>Starting example<select id="forecast-example"><option value="viktoria1_wt">VIKTORIA-1 · historical mechanics check</option><option value="bria_abc">Bria-ABC · original worked example</option><option value="custom">Custom trial assumptions</option></select></label><label>Treatment context (association only)<select id="forecast-option"><option value="">No treatment association</option></select></label><label>Trial assumptions · JSON<textarea id="forecast-input" rows="18" spellcheck="false" required></textarea></label><p class="muted">Edit prior, odds factors, event count, true-HR scenarios and statistical thresholds. Scenario weights and threshold weights must each sum to 1. Editing a worked example makes a hypothetical calculation.</p><button type="submit" id="forecast-run" class="primary">Calculate trial forecast ↗</button></form><div><p id="forecast-error" class="error" role="alert" hidden></p><div id="forecast-stale" class="notice" hidden>Forecast inputs changed. Recalculate before using or exporting these values.</div><div id="forecast-result" aria-live="polite"></div></div></div>
+    </section>
+    <section class="library"><div class="panel-heading"><span class="step">04</span><h2>The evidence library</h2></div><p class="muted">A dated, curated snapshot of trial publications, prescribing information and official assessments. Each claim links to a source. Clinical review is pending.</p><div id="library"></div></section>
+  </main>
+  <dialog id="review-dialog"><form id="review-form"><p class="eyebrow">RESEARCHER FEEDBACK</p><h2 id="review-title">Review option</h2><p id="review-option"></p><label>Comment or proposed edit<textarea id="review-comment" rows="5" maxlength="4000" placeholder="Explain your reasoning. Do not enter patient identifiers."></textarea></label><p id="review-error" role="alert" class="error" hidden></p><div class="dialog-actions"><button type="button" id="cancel-review" class="secondary">Cancel</button><button type="submit" class="primary">Save review</button></div></form></dialog>
+  <div id="toast" role="status" hidden></div>
+  <footer><span>BerryBio · Treatment strategy lab</span><span>U.S. research context · PFS endpoint scenarios · References beside each treatment</span></footer>
+</body>
+</html>

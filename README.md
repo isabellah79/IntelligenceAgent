@@ -4,6 +4,7 @@ Prototype work toward an agent that forecasts whether phase 2/3 trials meet thei
 
 ## Layout
 
+- `milestone1/`: local population-design lab for HR+/HER2− metastatic breast cancer after endocrine + CDK4/6 progression. Compare three candidate subgroups per treatment, with cited inclusion/exclusion drafts, reasons, pros/cons and population-specific conditional PFS scenarios. Gemini 3.8 Flash reviews population choices and criteria through Vertex AI. Run `python3 -m milestone1.server`; see [demo instructions](milestone1/README.md). Earlier individual-case records remain available in an archived view.
 - `sponsor_lookup/`: the breast cancer company list, built in four reviewed steps.
   - `step1_sponsors.xlsx`: sponsors of the 625 recruiting phase 2 breast cancer trials.
   - `step2_companies.xlsx`: sponsors merged to parent companies, with tickers and size tags.

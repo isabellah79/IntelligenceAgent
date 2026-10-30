@@ -1,0 +1,667 @@
+{
+  "schema_version": "1.0",
+  "evidence_as_of": "2026-10-30",
+  "review_status": "assistant_primary_source_review_oncology_pending",
+  "purpose": "Independent factual context for scientific-defense grading; no per-option scores or agent labels.",
+  "sources": {
+    "EMERALD": {
+      "title": "EMERALD · randomized phase 3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35584336/",
+      "finding": "Randomized phase 3; primary PFS analyses included all patients and ESR1-mutated patients; prior CDK4/6 therapy was required.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "ELAC-FDA": {
+      "title": "FDA · elacestrant benefit assessment",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2023/217639Orig1s000RiskR.pdf",
+      "finding": "The FDA efficacy population is ESR1-mutated disease; EMERALD required prior CDK4/6-containing therapy.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "EMERALD-DURATION": {
+      "title": "EMERALD · prior-duration subgroup analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39087959/",
+      "finding": "The >=12-month prior ET+CDK4/6 analysis is post hoc and exploratory, without adjustment for multiple testing.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "CAPITELLO": {
+      "title": "CAPItello-291 · randomized phase 3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37256976/",
+      "finding": "Dual primary PFS analyses were overall and PIK3CA/AKT1/PTEN-altered populations; 69.1% previously received CDK4/6 inhibitors.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "CAPI-LABEL": {
+      "title": "TRUQAP · prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=d698c106-2322-401e-b738-cbd83c843ecf",
+      "finding": "The indicated population has a qualifying PIK3CA, AKT1 or PTEN alteration; this does not require PIK3CA alone.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "DB06": {
+      "title": "DESTINY-Breast06 · randomized phase 3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39282896/",
+      "finding": "Randomized phase 3; primary PFS population was HER2-low; ultralow analysis was exploratory; no prior metastatic chemotherapy.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "TDXD-FDA": {
+      "title": "FDA · T-DXd in HER2-low / ultralow disease",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-fam-trastuzumab-deruxtecan-nxki-unresectable-or-metastatic-hr-positive-her2-low-or-her2",
+      "finding": "The indicated phenotype includes HER2-low and HER2-ultralow after endocrine therapy. Regulatory inclusion does not make both analyses confirmatory.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "DB06-TTP": {
+      "title": "DESTINY-Breast06 · prior endocrine/CDK4/6 duration analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41780642/",
+      "finding": "Duration subgroups were specified post hoc; benefit was reported across prior ET+CDK4/6 progression-time groups.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "IMLU-FDA": {
+      "title": "FDA · imlunestrant monotherapy",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-er-positive-her2-negative-esr1-mutated-advanced-or-metastatic-breast",
+      "finding": "EMBER-3 supports ESR1-mutated monotherapy; prior AI with or without CDK4/6 exposure was permitted.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "EMBER3": {
+      "title": "FDA · imlunestrant + abemaciclib",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+      "finding": "The combination comparison was primary in the overall population. Its ESR1-mutated subgroup was exploratory; the FDA indication is ESR1-mutated.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "EMBER3-PRIMARY": {
+      "title": "EMBER-3 primary publication",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39660834/",
+      "finding": "EMBER-3 randomized patients after AI with or without CDK4/6 therapy; primary analyses differed between monotherapy and combination.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "VERITAC2": {
+      "title": "FDA · vepdegestrant / VERITAC-2",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-vepdegestrant-er-positive-her2-negative-esr1-mutated-advanced-or-metastatic-breast",
+      "finding": "The FDA efficacy population is ESR1-mutated disease in the randomized VERITAC-2 trial.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "VERITAC2-PRIMARY": {
+      "title": "VERITAC-2 primary publication",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40454645/",
+      "finding": "VERITAC-2 required previous CDK4/6 and endocrine therapy; ESR1-mutated and overall PFS were primary analyses.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "GEDA-FDA": {
+      "title": "FDA · VIKTORIA-1 PFS comparisons",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-gedatolisib-fulvestrant-or-without-palbociclib-hr-positive-her2-negative-locally",
+      "finding": "VIKTORIA-1 Study 1 randomized the PIK3CA-mutation-not-detected population; triplet and doublet had distinct fulvestrant comparisons.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "GEDA-LABEL": {
+      "title": "REVTORPYK · prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=959d73ef-831f-4005-956c-210702270bda",
+      "finding": "Study 1 required progression after CDK4/6 plus non-steroidal AI; baseline ECOG was 0 or 1. This does not validate longer-duration enrichment.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "ALPEL-LABEL": {
+      "title": "PIQRAY · prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=b20b4e18-7a4b-4500-a08f-06c6dab0ee5b",
+      "finding": "SOLAR-1 supports PIK3CA-selected disease but is not a dedicated randomized modern post-CDK4/6 trial.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "BYLIEVE-2024": {
+      "title": "BYLieve cohort A, 2024 report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39637900/",
+      "finding": "Cohort A was noncomparative phase 2 after immediate CDK4/6 plus AI. ECOG <=2 was eligible; no randomized treatment-effect contrast is supplied.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "DATO-PRIMARY": {
+      "title": "TROPION-Breast01 · primary phase 3 results",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39265124/",
+      "finding": "Randomized phase 3 TROPION-Breast01 evaluated PFS after endocrine therapy and one or two chemotherapy lines.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "DATO-FDA": {
+      "title": "FDA approval summary · TROPION-Breast01",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-datopotamab-deruxtecan-dlnk-unresectable-or-metastatic-hr-positive-her2-negative-breast",
+      "finding": "The studied/indicated setting follows endocrine therapy and chemotherapy. Prior CDK4/6 exposure was mixed.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "TROPICS2": {
+      "title": "FDA · sacituzumab govitecan / TROPiCS-02",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-hr-positive-breast-cancer",
+      "finding": "TROPiCS-02 randomized patients after CDK4/6, endocrine therapy and taxane exposure, with substantial prior metastatic chemotherapy.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "OLYMPIAD": {
+      "title": "OlympiAD · olaparib randomized phase 3",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1706450",
+      "finding": "Randomized OlympiAD supports germline-BRCA, HER2-negative metastatic disease; it is not dedicated post-CDK4/6 sequencing evidence.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "OLAP-NCI": {
+      "title": "NCI · olaparib use in breast cancer",
+      "url": "https://www.cancer.gov/about-cancer/treatment/drugs/olaparib",
+      "finding": "Olaparib selection uses qualifying germline BRCA alteration and prior chemotherapy/endocrine context.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "POSTMONARCH": {
+      "title": "postMONARCH · randomized phase 3",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39693591/",
+      "finding": "Randomized phase 3 after prior CDK4/6 plus endocrine therapy; primary PFS was investigator-assessed; benefit appeared across major subgroups.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "PDQ": {
+      "title": "NCI · breast cancer treatment PDQ",
+      "url": "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq",
+      "finding": "Treatment overview supports contextual sequence reasoning; it is not a candidate-specific randomized capecitabine effect estimate.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    },
+    "CAPE": {
+      "title": "Capecitabine · prescribing information",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=e28a5ef7-4731-f8ac-e053-2995a90a21bf",
+      "finding": "Regimen-specific prescribing information supports safety review, not an invented post-CDK4/6 comparative HR.",
+      "review_date": "2026-10-30",
+      "review_method": "Assistant checked primary publication/official assessment; oncology adjudication pending"
+    }
+  },
+  "cases": {
+    "elacestrant": {
+      "analyses": [
+        {
+          "id": "EMERALD-esr1",
+          "selector": {
+            "biomarker": "esr1_altered"
+          },
+          "source_ids": [
+            "EMERALD",
+            "ELAC-FDA"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "required",
+          "selection_support": "trial_defined",
+          "finding": "ESR1-mutated PFS was a primary randomized efficacy analysis.",
+          "selection_reason": "The selected biomarker has trial and regulatory justification; no >=12-month rule is needed for this population.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Fulvestrant or aromatase inhibitor"
+        },
+        {
+          "id": "EMERALD-duration12",
+          "selector": {
+            "biomarker": "esr1_altered",
+            "duration_min": 12
+          },
+          "source_ids": [
+            "EMERALD-DURATION"
+          ],
+          "analysis_type": "randomized_exploratory",
+          "prior_cdk": "required",
+          "selection_support": "exploratory_only",
+          "finding": "The duration-selected result is a post hoc subgroup analysis without multiplicity adjustment.",
+          "selection_reason": "The observed subgroup result supports a hypothesis, not a validated duration threshold or a proven interaction.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Fulvestrant or aromatase inhibitor"
+        },
+        {
+          "id": "EMERALD-overall",
+          "selector": {
+            "biomarker": "esr1_unselected"
+          },
+          "source_ids": [
+            "EMERALD",
+            "ELAC-FDA"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "required",
+          "selection_support": "studied_broadening",
+          "finding": "An overall-population randomized analysis exists; it does not isolate benefit in the added ESR1-nonmutated component.",
+          "selection_reason": "The broader cohort was studied, but extending beyond the indicated ESR1-selected population needs a component-specific rationale.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Fulvestrant or aromatase inhibitor"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "capivasertib": {
+      "analyses": [
+        {
+          "id": "CAPITELLO-pathway",
+          "selector": {
+            "biomarker": "pathway_altered"
+          },
+          "source_ids": [
+            "CAPITELLO",
+            "CAPI-LABEL"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "mixed",
+          "selection_support": "trial_defined",
+          "finding": "The pathway-altered population was a dual-primary randomized efficacy population.",
+          "selection_reason": "Selection follows the studied/indicated PIK3CA-or-AKT1-or-PTEN population.",
+          "limitations": [],
+          "setting_note": "The aggregate source is not exclusively post-CDK4/6.",
+          "interaction_supported": false,
+          "comparator": "Placebo + fulvestrant"
+        },
+        {
+          "id": "CAPITELLO-pik3ca-only",
+          "selector": {
+            "biomarker": "pik3ca_altered"
+          },
+          "source_ids": [
+            "CAPITELLO",
+            "CAPI-LABEL"
+          ],
+          "analysis_type": "unreported_subgroup",
+          "prior_cdk": "mixed",
+          "selection_support": "unsupported_restriction",
+          "finding": "The supplied aggregate pathway result is not a PIK3CA-only superiority analysis.",
+          "selection_reason": "PIK3CA-only selection excludes other studied alterations; stronger benefit from this extra restriction is unestablished.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Placebo + fulvestrant"
+        },
+        {
+          "id": "CAPITELLO-overall",
+          "selector": {
+            "biomarker": "pathway_unselected"
+          },
+          "source_ids": [
+            "CAPITELLO",
+            "CAPI-LABEL"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "mixed",
+          "selection_support": "studied_broadening",
+          "finding": "The overall-population PFS analysis was randomized; the added non-altered component is not isolated by that overall result.",
+          "selection_reason": "Unselected eligibility broadens access but differs from the biomarker-selected indication.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Placebo + fulvestrant"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "tdxd": {
+      "analyses": [
+        {
+          "id": "DB06-low",
+          "selector": {
+            "biomarker": "her2_low",
+            "no_chemo": true
+          },
+          "source_ids": [
+            "DB06",
+            "TDXD-FDA"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "mixed",
+          "selection_support": "trial_defined",
+          "finding": "HER2-low was the primary randomized PFS population.",
+          "selection_reason": "HER2-low and chemotherapy-naive source-setting selection are directly supported.",
+          "limitations": [],
+          "setting_note": "Source prior-CDK4/6 exposure was not universally required.",
+          "interaction_supported": false,
+          "comparator": "Investigator-choice chemotherapy"
+        },
+        {
+          "id": "DB06-ultralow",
+          "selector": {
+            "biomarker": "her2_ultralow",
+            "no_chemo": true
+          },
+          "source_ids": [
+            "DB06",
+            "TDXD-FDA"
+          ],
+          "analysis_type": "randomized_exploratory",
+          "prior_cdk": "mixed",
+          "selection_support": "trial_defined",
+          "finding": "The ultralow analysis was exploratory, even though regulatory eligibility now includes ultralow.",
+          "selection_reason": "Phenotype-based selection has clinical/regulatory support, without proving greater benefit than HER2-low.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Investigator-choice chemotherapy"
+        },
+        {
+          "id": "DB06-early-progression",
+          "selector": {
+            "biomarker": "her2_both",
+            "rapid_months": 6,
+            "no_chemo": true
+          },
+          "source_ids": [
+            "DB06-TTP",
+            "DB06"
+          ],
+          "analysis_type": "randomized_exploratory",
+          "prior_cdk": "required",
+          "selection_support": "exploratory_only",
+          "finding": "The progression-time analysis is post hoc and reports benefit across duration groups.",
+          "selection_reason": "Early progression alone is not established as a predictive inclusion restriction.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Investigator-choice chemotherapy"
+        }
+      ],
+      "source_constraints": [
+        "no_chemo"
+      ],
+      "objective": "evidence_supported"
+    },
+    "imlunestrant": {
+      "analyses": [
+        {
+          "id": "imlunestrant-esr1",
+          "selector": {
+            "biomarker": "esr1_altered"
+          },
+          "source_ids": [
+            "IMLU-FDA",
+            "EMBER3-PRIMARY"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "mixed",
+          "selection_support": "trial_defined",
+          "finding": "The ESR1-selected comparison is a randomized primary efficacy analysis.",
+          "selection_reason": "ESR1 selection has clinical/regulatory justification; extra duration or functional-status rules need separate support.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Fulvestrant or exemestane"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "imlunestrant_abemaciclib": {
+      "analyses": [
+        {
+          "id": "imlunestrant_abemaciclib-esr1",
+          "selector": {
+            "biomarker": "esr1_altered"
+          },
+          "source_ids": [
+            "EMBER3",
+            "EMBER3-PRIMARY"
+          ],
+          "analysis_type": "randomized_exploratory",
+          "prior_cdk": "mixed",
+          "selection_support": "trial_defined",
+          "finding": "The ESR1-selected comparison is exploratory within a trial with an overall primary combination comparison.",
+          "selection_reason": "ESR1 selection has clinical/regulatory justification; extra duration or functional-status rules need separate support.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Imlunestrant alone"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "vepdegestrant": {
+      "analyses": [
+        {
+          "id": "vepdegestrant-esr1",
+          "selector": {
+            "biomarker": "esr1_altered"
+          },
+          "source_ids": [
+            "VERITAC2",
+            "VERITAC2-PRIMARY"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "required",
+          "selection_support": "trial_defined",
+          "finding": "The ESR1-selected comparison is a randomized primary efficacy analysis.",
+          "selection_reason": "ESR1 selection has clinical/regulatory justification; extra duration or functional-status rules need separate support.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Fulvestrant"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "gedatolisib": {
+      "analyses": [
+        {
+          "id": "VIKTORIA1-triplet",
+          "selector": {
+            "biomarker": "pik3ca_not_detected"
+          },
+          "source_ids": [
+            "GEDA-FDA",
+            "GEDA-LABEL"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "required",
+          "selection_support": "trial_defined",
+          "finding": "The triplet was compared with fulvestrant in the randomized PIK3CA-mutation-not-detected population.",
+          "selection_reason": "This selection follows the source cohort; no predictive contrast against PIK3CA-mutated patients is inferred.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Fulvestrant"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "alpelisib": {
+      "analyses": [
+        {
+          "id": "SOLAR1-context",
+          "selector": {
+            "biomarker": "pik3ca_altered"
+          },
+          "source_ids": [
+            "ALPEL-LABEL"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "indirect",
+          "selection_support": "trial_defined",
+          "finding": "The pivotal PIK3CA-selected randomized result is indirect for the modern post-CDK4/6 target.",
+          "selection_reason": "Biomarker selection is justified, but sequence-specific comparative evidence remains limited.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "No post-CDK4/6 comparative estimate supplied"
+        },
+        {
+          "id": "BYLIEVE-immediate-AI",
+          "selector": {
+            "biomarker": "pik3ca_altered",
+            "immediate_ai": true
+          },
+          "source_ids": [
+            "BYLIEVE-2024"
+          ],
+          "analysis_type": "single_arm",
+          "prior_cdk": "required",
+          "selection_support": "trial_defined",
+          "finding": "BYLieve cohort A directly studied the immediate AI+CDK4/6 sequence, using a noncomparative design.",
+          "selection_reason": "This sequence has prospective cohort support; it is not a randomized HR or proof of enrichment.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": null
+        },
+        {
+          "id": "BYLIEVE-PS2-eligibility",
+          "selector": {
+            "biomarker": "pik3ca_altered",
+            "ecog2": true
+          },
+          "source_ids": [
+            "BYLIEVE-2024"
+          ],
+          "analysis_type": "single_arm",
+          "prior_cdk": "required",
+          "selection_support": "indirect_rationale",
+          "finding": "BYLieve allowed ECOG <=2; this is eligibility evidence, not an ECOG-2-specific treatment-effect estimate.",
+          "selection_reason": "Broader functional eligibility should acknowledge existing cohort eligibility while separating safety from efficacy.",
+          "limitations": [
+            "No ECOG-2-specific randomized effect is supplied."
+          ],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": null
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "datodxd": {
+      "analyses": [
+        {
+          "id": "TROPION-pretreated",
+          "selector": {
+            "biomarker": null
+          },
+          "source_ids": [
+            "DATO-PRIMARY",
+            "DATO-FDA"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "mixed",
+          "selection_support": "trial_defined",
+          "finding": "Randomized evidence concerns the endocrine- and chemotherapy-pretreated setting.",
+          "selection_reason": "Prior-treatment alignment is justified; earlier use or an ADC-to-ADC sequence is not established by this parent result.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Investigator-choice chemotherapy"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "sacituzumab": {
+      "analyses": [
+        {
+          "id": "TROPICS-pretreated",
+          "selector": {
+            "biomarker": null
+          },
+          "source_ids": [
+            "TROPICS2"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "required",
+          "selection_support": "trial_defined",
+          "finding": "Randomized evidence concerns a heavily pretreated post-CDK4/6 population.",
+          "selection_reason": "The treatment-history cohort is supported; parent efficacy is not transferred to earlier-line or prior-ADC hypotheses.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Single-agent chemotherapy"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "olaparib": {
+      "analyses": [
+        {
+          "id": "OlympiAD-gbrca",
+          "selector": {
+            "biomarker": "gbrca"
+          },
+          "source_ids": [
+            "OLYMPIAD",
+            "OLAP-NCI"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "indirect",
+          "selection_support": "trial_defined",
+          "finding": "Randomized evidence supports germline-BRCA-selected disease in an older treatment sequence.",
+          "selection_reason": "Germline-BRCA selection is justified; modern post-CDK4/6 and no-prior-chemotherapy extensions require separate support.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Investigator-choice chemotherapy"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "postmonarch": {
+      "analyses": [
+        {
+          "id": "postMONARCH-post-AI",
+          "selector": {
+            "biomarker": null
+          },
+          "source_ids": [
+            "POSTMONARCH"
+          ],
+          "analysis_type": "randomized_primary",
+          "prior_cdk": "required",
+          "selection_support": "trial_defined",
+          "finding": "The randomized primary PFS analysis studied progression after prior CDK4/6 plus endocrine therapy.",
+          "selection_reason": "Source-history selection is justified; a new 12-month enrichment requirement is not established.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Placebo + fulvestrant"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    },
+    "chemotherapy": {
+      "analyses": [
+        {
+          "id": "capecitabine-context",
+          "selector": {
+            "biomarker": null
+          },
+          "source_ids": [
+            "CAPE",
+            "PDQ"
+          ],
+          "analysis_type": "indirect_guidance",
+          "prior_cdk": "indirect",
+          "selection_support": "indirect_rationale",
+          "finding": "The supplied references provide treatment context and drug safety, without a specific randomized post-CDK4/6 capecitabine contrast.",
+          "selection_reason": "A regimen-specific rationale is possible, but a unique predictive selection rule is not established by this bank.",
+          "limitations": [],
+          "setting_note": "",
+          "interaction_supported": false,
+          "comparator": "Specify a comparator"
+        }
+      ],
+      "source_constraints": [],
+      "objective": "evidence_supported"
+    }
+  }
+}

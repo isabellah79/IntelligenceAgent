@@ -1,0 +1,743 @@
+{
+ "options": [
+  {
+   "axes": [
+    "Biomarker selection"
+   ],
+   "cons": [
+    {
+     "id": "tdxd__her2low.cons.1",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "Subgroup benefit does not establish a predictive interaction, the optimal cohort, or superiority over other active treatments."
+    },
+    {
+     "id": "tdxd__her2low.cons.2",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "The source population is not exclusively post-CDK4/6; HER2-low versus ultralow benefit differences are not established by separate estimates."
+    }
+   ],
+   "defense": [
+    {
+     "id": "tdxd__her2low.benefit",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "Primary-population PFS benefit versus investigator-choice chemotherapy was demonstrated. HER2-low is not proven to benefit more than ultralow by comparing separate subgroup estimates."
+    }
+   ],
+   "estimates": {
+    "eligible_share": {
+     "reason": "No population-prevalence estimate is supplied.",
+     "status": "unavailable"
+    },
+    "endpoint_forecast": {
+     "assumed_hr": null,
+     "comparator": "Investigator-choice chemotherapy",
+     "interpretation": "A trial-statistic illustration, not a patient-benefit probability or ranking of optimal populations.",
+     "method_a": null,
+     "method_b": null,
+     "reason": "The reference includes a different treatment-history population. Explicitly allow source-to-target extrapolation or enter a justified hypothetical effect.",
+     "score": null,
+     "score_type": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "unavailable",
+     "text": "The reference includes a different treatment-history population. Explicitly allow source-to-target extrapolation or enter a justified hypothetical effect."
+    }
+   },
+   "evidence_context": {
+    "note": null,
+    "status": "reference",
+    "transfer": "mixed_prior_cdk"
+   },
+   "exclusion": [
+    {
+     "id": "tdxd__her2low.exclusion.outside_scope",
+     "purpose": "scope",
+     "reason": "Keeps the candidate inside the parent research question.",
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude disease outside the defined HR+/HER2− metastatic setting."
+    },
+    {
+     "id": "tdxd__her2low.exclusion.urgent_instability",
+     "purpose": "safety",
+     "reason": "Requires clinical adjudication rather than an anatomical blanket exclusion.",
+     "source_ids": [
+      "ABC"
+     ],
+     "status": "safety_review",
+     "text": "Exclude urgent organ compromise that makes the protocol's treatment or assessment schedule inappropriate; liver metastases alone are not visceral crisis."
+    },
+    {
+     "id": "tdxd__her2low.exclusion.unresolved_safety",
+     "purpose": "safety",
+     "reason": "Safety screening is not evidence that the excluded subgroup has less antitumor benefit.",
+     "source_ids": [
+      "TDXD-FDA"
+     ],
+     "status": "safety_review",
+     "text": "Exclude active or suspected ILD/pneumonitis pending pulmonary assessment; adjudicate prior ILD and define cardiac monitoring."
+    }
+   ],
+   "inclusion": [
+    {
+     "id": "tdxd__her2low.inclusion.disease",
+     "purpose": "scope",
+     "reason": "The user-defined parent population; biomarker refinements appear below.",
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "HR-positive, HER2-negative metastatic breast cancer."
+    },
+    {
+     "id": "tdxd__her2low.inclusion.post_cdk",
+     "purpose": "scope",
+     "reason": "Required project scope. Some reference trials contain broader prior-treatment populations.",
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "design_assumption",
+     "text": "Document progression on endocrine therapy plus a CDK4/6 inhibitor in the advanced-disease setting."
+    },
+    {
+     "id": "tdxd__her2low.inclusion.selection",
+     "purpose": "efficacy",
+     "reason": "Defines this candidate population; evidence strength is recorded separately.",
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "Require HER2 IHC 1+ or IHC 2+/ISH-negative disease."
+    },
+    {
+     "id": "tdxd__her2low.inclusion.prior_chemo",
+     "purpose": "evidence_alignment",
+     "reason": "Defines the source-trial setting rather than a universal safety restriction.",
+     "source_ids": [
+      "DB06"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude prior chemotherapy for metastatic disease for this DB06-aligned cohort."
+    },
+    {
+     "id": "tdxd__her2low.inclusion.consent",
+     "purpose": "design",
+     "reason": "Operational protocol proposal; age, sex and endocrine requirements need regimen-specific confirmation.",
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "design_assumption",
+     "text": "Adults able to provide informed consent; document menopausal/ovarian-suppression and reproductive requirements for the selected regimen."
+    }
+   ],
+   "option_id": "tdxd__her2low",
+   "population": "HER2-low, no prior metastatic chemotherapy",
+   "pros": [
+    {
+     "id": "tdxd__her2low.pros.1",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "An explicit cohort definition permits a prespecified analysis for this treatment and comparator."
+    },
+    {
+     "id": "tdxd__her2low.pros.2",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "Uses the HER2-low primary-analysis phenotype and a chemotherapy-naive source setting."
+    },
+    {
+     "id": "tdxd__her2low.pros.3",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "Provides a starting population for evidence review, subject to the documented source-to-target differences."
+    }
+   ],
+   "protocol_pending": [
+    {
+     "id": "tdxd__her2low.protocol_pending.1",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "Finalize assay/variant definitions, prior-agent/line limits and disease-assessment rules against the source protocol."
+    },
+    {
+     "id": "tdxd__her2low.protocol_pending.2",
+     "purpose": null,
+     "source_ids": [
+      "FDA-LABS",
+      "FDA-WASHOUT"
+     ],
+     "text": "Specify justified laboratory thresholds, recovery and washout periods, concomitant medicines and reproductive precautions."
+    },
+    {
+     "id": "tdxd__her2low.protocol_pending.3",
+     "purpose": null,
+     "source_ids": [
+      "FDA-PS",
+      "FDA-CNS"
+     ],
+     "text": "Set a reasoned performance-status policy and CNS criteria; do not automatically exclude all stable brain metastases."
+    }
+   ],
+   "references": [
+    {
+     "source_id": "DB06",
+     "supports": [
+      "DB06",
+      "TDXD-FDA"
+     ]
+    },
+    {
+     "source_id": "TDXD-FDA",
+     "supports": [
+      "DB06",
+      "TDXD-FDA"
+     ]
+    }
+   ],
+   "unclassified_criteria": []
+  },
+  {
+   "axes": [
+    "HER2 expression"
+   ],
+   "cons": [
+    {
+     "id": "tdxd__ultralow.cons.1",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "Subgroup benefit does not establish a predictive interaction, the optimal cohort, or superiority over other active treatments."
+    },
+    {
+     "id": "tdxd__ultralow.cons.2",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "The ultralow analysis is exploratory; the HER2-low primary HR is not a quantitative effect for this cohort."
+    },
+    {
+     "id": "tdxd__ultralow.cons.3",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "A narrower rule may slow recruitment and reduce generalizability; subgroup-specific benefit needs validation."
+    }
+   ],
+   "defense": [
+    {
+     "id": "tdxd__ultralow.benefit",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "DB06 included an exploratory ultralow cohort. The HER2-low primary HR is not assigned to this population."
+    }
+   ],
+   "estimates": {
+    "eligible_share": {
+     "reason": "No population-prevalence estimate is supplied.",
+     "status": "unavailable"
+    },
+    "endpoint_forecast": {
+     "assumed_hr": null,
+     "comparator": null,
+     "interpretation": "A trial-statistic illustration, not a patient-benefit probability or ranking of optimal populations.",
+     "method_a": null,
+     "method_b": null,
+     "reason": "No comparative HR for this candidate is supplied. Specify an explicit hypothetical HR and comparator to explore a scenario.",
+     "score": null,
+     "score_type": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "unavailable",
+     "text": "No comparative HR for this candidate is supplied. Specify an explicit hypothetical HR and comparator to explore a scenario."
+    }
+   },
+   "evidence_context": {
+    "note": null,
+    "status": "exploratory",
+    "transfer": "unestablished"
+   },
+   "exclusion": [
+    {
+     "id": "tdxd__ultralow.exclusion.outside_scope",
+     "purpose": "scope",
+     "reason": "Keeps the candidate inside the parent research question.",
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude disease outside the defined HR+/HER2− metastatic setting."
+    },
+    {
+     "id": "tdxd__ultralow.exclusion.urgent_instability",
+     "purpose": "safety",
+     "reason": "Requires clinical adjudication rather than an anatomical blanket exclusion.",
+     "source_ids": [
+      "ABC"
+     ],
+     "status": "safety_review",
+     "text": "Exclude urgent organ compromise that makes the protocol's treatment or assessment schedule inappropriate; liver metastases alone are not visceral crisis."
+    },
+    {
+     "id": "tdxd__ultralow.exclusion.unresolved_safety",
+     "purpose": "safety",
+     "reason": "Safety screening is not evidence that the excluded subgroup has less antitumor benefit.",
+     "source_ids": [
+      "TDXD-FDA"
+     ],
+     "status": "safety_review",
+     "text": "Exclude active or suspected ILD/pneumonitis pending pulmonary assessment; adjudicate prior ILD and define cardiac monitoring."
+    }
+   ],
+   "inclusion": [
+    {
+     "id": "tdxd__ultralow.inclusion.disease",
+     "purpose": "scope",
+     "reason": "The user-defined parent population; biomarker refinements appear below.",
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "HR-positive, HER2-negative metastatic breast cancer."
+    },
+    {
+     "id": "tdxd__ultralow.inclusion.post_cdk",
+     "purpose": "scope",
+     "reason": "Required project scope. Some reference trials contain broader prior-treatment populations.",
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "design_assumption",
+     "text": "Document progression on endocrine therapy plus a CDK4/6 inhibitor in the advanced-disease setting."
+    },
+    {
+     "id": "tdxd__ultralow.inclusion.selection",
+     "purpose": "efficacy",
+     "reason": "Defines this candidate population; evidence strength is recorded separately.",
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "Require IHC 0 with membrane staining; exclude IHC 0 without membrane staining."
+    },
+    {
+     "id": "tdxd__ultralow.inclusion.prior_chemo",
+     "purpose": "evidence_alignment",
+     "reason": "Keeps the setting aligned with DB06.",
+     "source_ids": [
+      "DB06"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude prior metastatic chemotherapy for source-setting alignment."
+    },
+    {
+     "id": "tdxd__ultralow.inclusion.consent",
+     "purpose": "design",
+     "reason": "Operational protocol proposal; age, sex and endocrine requirements need regimen-specific confirmation.",
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "status": "design_assumption",
+     "text": "Adults able to provide informed consent; document menopausal/ovarian-suppression and reproductive requirements for the selected regimen."
+    }
+   ],
+   "option_id": "tdxd__ultralow",
+   "population": "HER2-ultralow exploratory population",
+   "pros": [
+    {
+     "id": "tdxd__ultralow.pros.1",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "An explicit cohort definition permits a prespecified analysis for this treatment and comparator."
+    },
+    {
+     "id": "tdxd__ultralow.pros.2",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "Separately evaluates a source-trial subgroup that would be missed by restricting to HER2-low alone."
+    },
+    {
+     "id": "tdxd__ultralow.pros.3",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "Makes an enrichment or generalizability hypothesis explicit and testable; a stronger treatment effect is not assumed."
+    }
+   ],
+   "protocol_pending": [
+    {
+     "id": "tdxd__ultralow.protocol_pending.1",
+     "purpose": null,
+     "source_ids": [
+      "DB06",
+      "TDXD-FDA"
+     ],
+     "text": "Finalize assay/variant definitions, prior-agent/line limits and disease-assessment rules against the source protocol."
+    },
+    {
+     "id": "tdxd__ultralow.protocol_pending.2",
+     "purpose": null,
+     "source_ids": [
+      "FDA-LABS",
+      "FDA-WASHOUT"
+     ],
+     "text": "Specify justified laboratory thresholds, recovery and washout periods, concomitant medicines and reproductive precautions."
+    },
+    {
+     "id": "tdxd__ultralow.protocol_pending.3",
+     "purpose": null,
+     "source_ids": [
+      "FDA-PS",
+      "FDA-CNS"
+     ],
+     "text": "Set a reasoned performance-status policy and CNS criteria; do not automatically exclude all stable brain metastases."
+    }
+   ],
+   "references": [
+    {
+     "source_id": "DB06",
+     "supports": [
+      "DB06",
+      "TDXD-FDA"
+     ]
+    },
+    {
+     "source_id": "TDXD-FDA",
+     "supports": [
+      "DB06",
+      "TDXD-FDA"
+     ]
+    }
+   ],
+   "unclassified_criteria": []
+  },
+  {
+   "axes": [
+    "Prior endocrine duration"
+   ],
+   "cons": [
+    {
+     "id": "tdxd__rapid_progression.cons.1",
+     "purpose": null,
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "text": "Subgroup benefit does not establish a predictive interaction, the optimal cohort, or superiority over other active treatments."
+    },
+    {
+     "id": "tdxd__rapid_progression.cons.2",
+     "purpose": null,
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "text": "The analysis reported benefit across duration groups, so excluding slower-progressing patients needs an additional scientific rationale."
+    },
+    {
+     "id": "tdxd__rapid_progression.cons.3",
+     "purpose": null,
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "text": "A narrower rule may slow recruitment and reduce generalizability; subgroup-specific benefit needs validation."
+    }
+   ],
+   "defense": [
+    {
+     "id": "tdxd__rapid_progression.benefit",
+     "purpose": null,
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "text": "A post hoc analysis reported benefit in early progression and the other duration groups. It did not establish early progression as a predictive selection rule."
+    }
+   ],
+   "estimates": {
+    "eligible_share": {
+     "reason": "No population-prevalence estimate is supplied.",
+     "status": "unavailable"
+    },
+    "endpoint_forecast": {
+     "assumed_hr": null,
+     "comparator": "Investigator-choice chemotherapy",
+     "interpretation": "A trial-statistic illustration, not a patient-benefit probability or ranking of optimal populations.",
+     "method_a": null,
+     "method_b": null,
+     "reason": "No comparative HR for this candidate is supplied. Specify an explicit hypothetical HR and comparator to explore a scenario.",
+     "score": null,
+     "score_type": null,
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "status": "unavailable",
+     "text": "No comparative HR for this candidate is supplied. Specify an explicit hypothetical HR and comparator to explore a scenario."
+    }
+   },
+   "evidence_context": {
+    "note": "The comparison is exploratory. Its median PFS is shown, but no HR is inferred from the medians.",
+    "status": "exploratory",
+    "transfer": "direct"
+   },
+   "exclusion": [
+    {
+     "id": "tdxd__rapid_progression.exclusion.outside_scope",
+     "purpose": "scope",
+     "reason": "Keeps the candidate inside the parent research question.",
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude disease outside the defined HR+/HER2− metastatic setting."
+    },
+    {
+     "id": "tdxd__rapid_progression.exclusion.urgent_instability",
+     "purpose": "safety",
+     "reason": "Requires clinical adjudication rather than an anatomical blanket exclusion.",
+     "source_ids": [
+      "ABC"
+     ],
+     "status": "safety_review",
+     "text": "Exclude urgent organ compromise that makes the protocol's treatment or assessment schedule inappropriate; liver metastases alone are not visceral crisis."
+    },
+    {
+     "id": "tdxd__rapid_progression.exclusion.unresolved_safety",
+     "purpose": "safety",
+     "reason": "Safety screening is not evidence that the excluded subgroup has less antitumor benefit.",
+     "source_ids": [
+      "TDXD-FDA"
+     ],
+     "status": "safety_review",
+     "text": "Exclude active or suspected ILD/pneumonitis pending pulmonary assessment; adjudicate prior ILD and define cardiac monitoring."
+    }
+   ],
+   "inclusion": [
+    {
+     "id": "tdxd__rapid_progression.inclusion.disease",
+     "purpose": "scope",
+     "reason": "The user-defined parent population; biomarker refinements appear below.",
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "status": "evidence_supported",
+     "text": "HR-positive, HER2-negative metastatic breast cancer."
+    },
+    {
+     "id": "tdxd__rapid_progression.inclusion.post_cdk",
+     "purpose": "scope",
+     "reason": "Required project scope. Some reference trials contain broader prior-treatment populations.",
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "status": "design_assumption",
+     "text": "Document progression on endocrine therapy plus a CDK4/6 inhibitor in the advanced-disease setting."
+    },
+    {
+     "id": "tdxd__rapid_progression.inclusion.selection",
+     "purpose": "efficacy",
+     "reason": "Defines this candidate population; evidence strength is recorded separately.",
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "status": "evidence_supported",
+     "text": "Require HER2-low or ultralow disease and progression within 6 months of first-line ET + CDK4/6."
+    },
+    {
+     "id": "tdxd__rapid_progression.inclusion.prior_chemo",
+     "purpose": "evidence_alignment",
+     "reason": "Maintains the DB06 chemotherapy-naive setting.",
+     "source_ids": [
+      "DB06"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude prior metastatic chemotherapy for source-setting alignment."
+    },
+    {
+     "id": "tdxd__rapid_progression.inclusion.consent",
+     "purpose": "design",
+     "reason": "Operational protocol proposal; age, sex and endocrine requirements need regimen-specific confirmation.",
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "status": "design_assumption",
+     "text": "Adults able to provide informed consent; document menopausal/ovarian-suppression and reproductive requirements for the selected regimen."
+    }
+   ],
+   "option_id": "tdxd__rapid_progression",
+   "population": "HER2-low / ultralow + early endocrine progression",
+   "pros": [
+    {
+     "id": "tdxd__rapid_progression.pros.1",
+     "purpose": null,
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "text": "An explicit cohort definition permits a prespecified analysis for this treatment and comparator."
+    },
+    {
+     "id": "tdxd__rapid_progression.pros.2",
+     "purpose": null,
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "text": "Makes a reported early-endocrine-progression subgroup prospectively testable."
+    },
+    {
+     "id": "tdxd__rapid_progression.pros.3",
+     "purpose": null,
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "text": "Makes an enrichment or generalizability hypothesis explicit and testable; a stronger treatment effect is not assumed."
+    }
+   ],
+   "protocol_pending": [
+    {
+     "id": "tdxd__rapid_progression.protocol_pending.1",
+     "purpose": null,
+     "source_ids": [
+      "DB06-TTP",
+      "DB06"
+     ],
+     "text": "Finalize assay/variant definitions, prior-agent/line limits and disease-assessment rules against the source protocol."
+    },
+    {
+     "id": "tdxd__rapid_progression.protocol_pending.2",
+     "purpose": null,
+     "source_ids": [
+      "FDA-LABS",
+      "FDA-WASHOUT"
+     ],
+     "text": "Specify justified laboratory thresholds, recovery and washout periods, concomitant medicines and reproductive precautions."
+    },
+    {
+     "id": "tdxd__rapid_progression.protocol_pending.3",
+     "purpose": null,
+     "source_ids": [
+      "FDA-PS",
+      "FDA-CNS"
+     ],
+     "text": "Set a reasoned performance-status policy and CNS criteria; do not automatically exclude all stable brain metastases."
+    }
+   ],
+   "references": [
+    {
+     "source_id": "DB06-TTP",
+     "supports": [
+      "DB06-TTP",
+      "DB06"
+     ]
+    },
+    {
+     "source_id": "DB06",
+     "supports": [
+      "DB06-TTP",
+      "DB06"
+     ]
+    }
+   ],
+   "unclassified_criteria": []
+  }
+ ],
+ "provenance": {
+  "agent": "demo",
+  "created": "2026-10-30T09:12:44+00:00",
+  "model": "curated",
+  "tools": [
+   "population_library"
+  ]
+ },
+ "recommendation": {
+  "defense": [
+   {
+    "purpose": null,
+    "source_ids": [
+     "DB06",
+     "TDXD-FDA"
+    ],
+    "text": "Primary-population PFS benefit versus investigator-choice chemotherapy was demonstrated. HER2-low is not proven to benefit more than ultralow by comparing separate subgroup estimates."
+   }
+  ],
+  "option_id": "tdxd__her2low"
+ },
+ "trial": {
+  "case_id": "tdxd",
+  "condition": "HR+/HER2− metastatic breast cancer after progression on endocrine therapy plus a CDK4/6 inhibitor",
+  "drug": "Trastuzumab deruxtecan (T-DXd)",
+  "line_of_therapy": "post-CDK4/6",
+  "nct_id": null,
+  "phase": "phase 2/3 setting",
+  "primary_endpoint": "PFS",
+  "source_trial_names": [
+   "DESTINY-Breast06",
+   "DESTINY-Breast06 · post hoc TTP <6 months"
+  ]
+ }
+}

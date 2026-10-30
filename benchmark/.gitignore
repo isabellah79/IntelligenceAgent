@@ -1,0 +1,7 @@
+.cache/
+reports/*
+!reports/oncology-review.html
+!reports/oncology-review-preview.png
+!reports/scientific-defense-v3-gemini.json
+!reports/scientific-defense-v3-gemini.md
+!reports/scientific-defense-v3-gemini-inputs/

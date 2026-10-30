@@ -1,0 +1,17 @@
+{
+  "pros_present": 1.0,
+  "cons_present": 1.0,
+  "cons_substantive": 1.0,
+  "no_overclaiming": 2.0,
+  "uses_guidance": 1.0,
+  "cns_not_blanket": 1.5,
+  "ps_justified": 1.0,
+  "safety_exclusion": 1.5,
+  "scope_respected": 1.5,
+  "criteria_complete": 1.0,
+  "estimates_ranged": 1.0,
+  "citation_coverage": 1.5,
+  "criteria_reasoned": 1.5,
+  "uncertainty_explicit": 1.5,
+  "population_defended": 2.0
+}

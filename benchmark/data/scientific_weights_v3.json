@@ -1,0 +1,10 @@
+{
+  "version": "scientific-v3",
+  "scientific_share": 0.8,
+  "dimension_weights": {
+    "evidence_strength": 0.35,
+    "population_applicability": 0.25,
+    "selection_justification": 0.25,
+    "tradeoffs": 0.15
+  }
+}

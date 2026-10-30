@@ -1,0 +1,713 @@
+{
+ "options": [
+  {
+   "axes": [
+    "Biomarker selection"
+   ],
+   "cons": [
+    {
+     "id": "capivasertib__pathway.cons.1",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Subgroup benefit does not establish a predictive interaction, the optimal cohort, or superiority over other active treatments."
+    },
+    {
+     "id": "capivasertib__pathway.cons.2",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Different pathway alterations may remain heterogeneous; the aggregate estimate does not resolve each alteration in an exclusively post-CDK4/6 cohort."
+    }
+   ],
+   "defense": [
+    {
+     "id": "capivasertib__pathway.benefit",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Randomized PFS benefit was demonstrated in the pathway-altered population. Its aggregate HR is not an exclusively post-CDK4/6 estimate."
+    }
+   ],
+   "estimates": {
+    "eligible_share": {
+     "reason": "No population-prevalence estimate is supplied.",
+     "status": "unavailable"
+    },
+    "endpoint_forecast": {
+     "assumed_hr": null,
+     "comparator": "Placebo + fulvestrant",
+     "interpretation": "A trial-statistic illustration, not a patient-benefit probability or ranking of optimal populations.",
+     "method_a": null,
+     "method_b": null,
+     "reason": "The reference includes a different treatment-history population. Explicitly allow source-to-target extrapolation or enter a justified hypothetical effect.",
+     "score": null,
+     "score_type": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "unavailable",
+     "text": "The reference includes a different treatment-history population. Explicitly allow source-to-target extrapolation or enter a justified hypothetical effect."
+    }
+   },
+   "evidence_context": {
+    "note": null,
+    "status": "reference",
+    "transfer": "mixed_prior_cdk"
+   },
+   "exclusion": [
+    {
+     "id": "capivasertib__pathway.exclusion.outside_scope",
+     "purpose": "scope",
+     "reason": "Keeps the candidate inside the parent research question.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude disease outside the defined HR+/HER2− metastatic setting."
+    },
+    {
+     "id": "capivasertib__pathway.exclusion.urgent_instability",
+     "purpose": "safety",
+     "reason": "Requires clinical adjudication rather than an anatomical blanket exclusion.",
+     "source_ids": [
+      "ABC"
+     ],
+     "status": "safety_review",
+     "text": "Exclude urgent organ compromise that makes the protocol's treatment or assessment schedule inappropriate; liver metastases alone are not visceral crisis."
+    },
+    {
+     "id": "capivasertib__pathway.exclusion.unresolved_safety",
+     "purpose": "safety",
+     "reason": "Safety screening is not evidence that the excluded subgroup has less antitumor benefit.",
+     "source_ids": [
+      "CAPI-LABEL"
+     ],
+     "status": "safety_review",
+     "text": "Resolve uncontrolled glucose abnormalities and clinically important rash/diarrhea risk before enrollment; define drug-specific thresholds."
+    }
+   ],
+   "inclusion": [
+    {
+     "id": "capivasertib__pathway.inclusion.disease",
+     "purpose": "scope",
+     "reason": "The user-defined parent population; biomarker refinements appear below.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "evidence_supported",
+     "text": "HR-positive, HER2-negative metastatic breast cancer."
+    },
+    {
+     "id": "capivasertib__pathway.inclusion.post_cdk",
+     "purpose": "scope",
+     "reason": "Required project scope. Some reference trials contain broader prior-treatment populations.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "design_assumption",
+     "text": "Document progression on endocrine therapy plus a CDK4/6 inhibitor in the advanced-disease setting."
+    },
+    {
+     "id": "capivasertib__pathway.inclusion.selection",
+     "purpose": "efficacy",
+     "reason": "Defines this candidate population; evidence strength is recorded separately.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "evidence_supported",
+     "text": "Require at least one qualifying PIK3CA, AKT1 or PTEN alteration."
+    },
+    {
+     "id": "capivasertib__pathway.inclusion.prior_partner",
+     "purpose": "evidence_alignment",
+     "reason": "The proposed all-post-CDK4/6 setting is narrower than the published mixed-exposure population.",
+     "source_ids": [
+      "CAPITELLO"
+     ],
+     "status": "evidence_supported",
+     "text": "Document progression on an aromatase-inhibitor-based regimen and the CDK4/6 partner."
+    },
+    {
+     "id": "capivasertib__pathway.inclusion.consent",
+     "purpose": "design",
+     "reason": "Operational protocol proposal; age, sex and endocrine requirements need regimen-specific confirmation.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "design_assumption",
+     "text": "Adults able to provide informed consent; document menopausal/ovarian-suppression and reproductive requirements for the selected regimen."
+    }
+   ],
+   "option_id": "capivasertib__pathway",
+   "population": "PIK3CA / AKT1 / PTEN-altered population",
+   "pros": [
+    {
+     "id": "capivasertib__pathway.pros.1",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "An explicit cohort definition permits a prespecified analysis for this treatment and comparator."
+    },
+    {
+     "id": "capivasertib__pathway.pros.2",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Retains all three qualifying pathway-alteration groups studied in the biomarker-selected comparison."
+    },
+    {
+     "id": "capivasertib__pathway.pros.3",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Provides a starting population for evidence review, subject to the documented source-to-target differences."
+    }
+   ],
+   "protocol_pending": [
+    {
+     "id": "capivasertib__pathway.protocol_pending.1",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Finalize assay/variant definitions, prior-agent/line limits and disease-assessment rules against the source protocol."
+    },
+    {
+     "id": "capivasertib__pathway.protocol_pending.2",
+     "purpose": null,
+     "source_ids": [
+      "FDA-LABS",
+      "FDA-WASHOUT"
+     ],
+     "text": "Specify justified laboratory thresholds, recovery and washout periods, concomitant medicines and reproductive precautions."
+    },
+    {
+     "id": "capivasertib__pathway.protocol_pending.3",
+     "purpose": null,
+     "source_ids": [
+      "FDA-PS",
+      "FDA-CNS"
+     ],
+     "text": "Set a reasoned performance-status policy and CNS criteria; do not automatically exclude all stable brain metastases."
+    }
+   ],
+   "references": [
+    {
+     "source_id": "CAPITELLO",
+     "supports": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ]
+    },
+    {
+     "source_id": "CAPI-LABEL",
+     "supports": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ]
+    }
+   ],
+   "unclassified_criteria": []
+  },
+  {
+   "axes": [
+    "One molecular subgroup"
+   ],
+   "cons": [
+    {
+     "id": "capivasertib__pik3ca.cons.1",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Subgroup benefit does not establish a predictive interaction, the optimal cohort, or superiority over other active treatments."
+    },
+    {
+     "id": "capivasertib__pik3ca.cons.2",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Excludes patients with AKT1/PTEN alterations alone who are part of the broader selected population; stronger benefit from the restriction is unproven."
+    },
+    {
+     "id": "capivasertib__pik3ca.cons.3",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "A narrower rule may slow recruitment and reduce generalizability; subgroup-specific benefit needs validation."
+    }
+   ],
+   "defense": [
+    {
+     "id": "capivasertib__pik3ca.benefit",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "PIK3CA is part of the studied altered population; greater benefit from restricting to this component is not established by the supplied aggregate result."
+    }
+   ],
+   "estimates": {
+    "eligible_share": {
+     "reason": "No population-prevalence estimate is supplied.",
+     "status": "unavailable"
+    },
+    "endpoint_forecast": {
+     "assumed_hr": null,
+     "comparator": null,
+     "interpretation": "A trial-statistic illustration, not a patient-benefit probability or ranking of optimal populations.",
+     "method_a": null,
+     "method_b": null,
+     "reason": "No comparative HR for this candidate is supplied. Specify an explicit hypothetical HR and comparator to explore a scenario.",
+     "score": null,
+     "score_type": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "unavailable",
+     "text": "No comparative HR for this candidate is supplied. Specify an explicit hypothetical HR and comparator to explore a scenario."
+    }
+   },
+   "evidence_context": {
+    "note": null,
+    "status": "hypothesis",
+    "transfer": "unestablished"
+   },
+   "exclusion": [
+    {
+     "id": "capivasertib__pik3ca.exclusion.outside_scope",
+     "purpose": "scope",
+     "reason": "Keeps the candidate inside the parent research question.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude disease outside the defined HR+/HER2− metastatic setting."
+    },
+    {
+     "id": "capivasertib__pik3ca.exclusion.urgent_instability",
+     "purpose": "safety",
+     "reason": "Requires clinical adjudication rather than an anatomical blanket exclusion.",
+     "source_ids": [
+      "ABC"
+     ],
+     "status": "safety_review",
+     "text": "Exclude urgent organ compromise that makes the protocol's treatment or assessment schedule inappropriate; liver metastases alone are not visceral crisis."
+    },
+    {
+     "id": "capivasertib__pik3ca.exclusion.unresolved_safety",
+     "purpose": "safety",
+     "reason": "Safety screening is not evidence that the excluded subgroup has less antitumor benefit.",
+     "source_ids": [
+      "CAPI-LABEL"
+     ],
+     "status": "safety_review",
+     "text": "Resolve uncontrolled glucose abnormalities and clinically important rash/diarrhea risk before enrollment; define drug-specific thresholds."
+    }
+   ],
+   "inclusion": [
+    {
+     "id": "capivasertib__pik3ca.inclusion.disease",
+     "purpose": "scope",
+     "reason": "The user-defined parent population; biomarker refinements appear below.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "evidence_supported",
+     "text": "HR-positive, HER2-negative metastatic breast cancer."
+    },
+    {
+     "id": "capivasertib__pik3ca.inclusion.post_cdk",
+     "purpose": "scope",
+     "reason": "Required project scope. Some reference trials contain broader prior-treatment populations.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "design_assumption",
+     "text": "Document progression on endocrine therapy plus a CDK4/6 inhibitor in the advanced-disease setting."
+    },
+    {
+     "id": "capivasertib__pik3ca.inclusion.selection",
+     "purpose": "efficacy",
+     "reason": "Defines this candidate population; evidence strength is recorded separately.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "design_assumption",
+     "text": "Restrict to qualifying PIK3CA mutations; characterize AKT1/PTEN and co-alterations."
+    },
+    {
+     "id": "capivasertib__pik3ca.inclusion.consent",
+     "purpose": "design",
+     "reason": "Operational protocol proposal; age, sex and endocrine requirements need regimen-specific confirmation.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "design_assumption",
+     "text": "Adults able to provide informed consent; document menopausal/ovarian-suppression and reproductive requirements for the selected regimen."
+    }
+   ],
+   "option_id": "capivasertib__pik3ca",
+   "population": "PIK3CA-mutated enrichment hypothesis",
+   "pros": [
+    {
+     "id": "capivasertib__pik3ca.pros.1",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "An explicit cohort definition permits a prespecified analysis for this treatment and comparator."
+    },
+    {
+     "id": "capivasertib__pik3ca.pros.2",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Makes a single molecular component of the pathway-selected population independently testable."
+    },
+    {
+     "id": "capivasertib__pik3ca.pros.3",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Makes an enrichment or generalizability hypothesis explicit and testable; a stronger treatment effect is not assumed."
+    }
+   ],
+   "protocol_pending": [
+    {
+     "id": "capivasertib__pik3ca.protocol_pending.1",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Finalize assay/variant definitions, prior-agent/line limits and disease-assessment rules against the source protocol."
+    },
+    {
+     "id": "capivasertib__pik3ca.protocol_pending.2",
+     "purpose": null,
+     "source_ids": [
+      "FDA-LABS",
+      "FDA-WASHOUT"
+     ],
+     "text": "Specify justified laboratory thresholds, recovery and washout periods, concomitant medicines and reproductive precautions."
+    },
+    {
+     "id": "capivasertib__pik3ca.protocol_pending.3",
+     "purpose": null,
+     "source_ids": [
+      "FDA-PS",
+      "FDA-CNS"
+     ],
+     "text": "Set a reasoned performance-status policy and CNS criteria; do not automatically exclude all stable brain metastases."
+    }
+   ],
+   "references": [
+    {
+     "source_id": "CAPITELLO",
+     "supports": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ]
+    },
+    {
+     "source_id": "CAPI-LABEL",
+     "supports": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ]
+    }
+   ],
+   "unclassified_criteria": []
+  },
+  {
+   "axes": [
+    "Broader biomarker eligibility"
+   ],
+   "cons": [
+    {
+     "id": "capivasertib__unselected.cons.1",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Subgroup benefit does not establish a predictive interaction, the optimal cohort, or superiority over other active treatments."
+    },
+    {
+     "id": "capivasertib__unselected.cons.2",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "A positive overall result cannot be assigned to the non-altered stratum alone; this cohort goes beyond the cited biomarker-selected indication."
+    }
+   ],
+   "defense": [
+    {
+     "id": "capivasertib__unselected.benefit",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "The overall trial result includes altered and non-altered tumors and does not prove benefit in the non-altered subgroup alone."
+    }
+   ],
+   "estimates": {
+    "eligible_share": {
+     "reason": "No population-prevalence estimate is supplied.",
+     "status": "unavailable"
+    },
+    "endpoint_forecast": {
+     "assumed_hr": null,
+     "comparator": "Placebo + fulvestrant",
+     "interpretation": "A trial-statistic illustration, not a patient-benefit probability or ranking of optimal populations.",
+     "method_a": null,
+     "method_b": null,
+     "reason": "The reference includes a different treatment-history population. Explicitly allow source-to-target extrapolation or enter a justified hypothetical effect.",
+     "score": null,
+     "score_type": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "unavailable",
+     "text": "The reference includes a different treatment-history population. Explicitly allow source-to-target extrapolation or enter a justified hypothetical effect."
+    }
+   },
+   "evidence_context": {
+    "note": "Beyond the cited biomarker-selected indication; a trial hypothesis, not an established treatment population.",
+    "status": "broader",
+    "transfer": "mixed_prior_cdk"
+   },
+   "exclusion": [
+    {
+     "id": "capivasertib__unselected.exclusion.outside_scope",
+     "purpose": "scope",
+     "reason": "Keeps the candidate inside the parent research question.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude disease outside the defined HR+/HER2− metastatic setting."
+    },
+    {
+     "id": "capivasertib__unselected.exclusion.urgent_instability",
+     "purpose": "safety",
+     "reason": "Requires clinical adjudication rather than an anatomical blanket exclusion.",
+     "source_ids": [
+      "ABC"
+     ],
+     "status": "safety_review",
+     "text": "Exclude urgent organ compromise that makes the protocol's treatment or assessment schedule inappropriate; liver metastases alone are not visceral crisis."
+    },
+    {
+     "id": "capivasertib__unselected.exclusion.unresolved_safety",
+     "purpose": "safety",
+     "reason": "Safety screening is not evidence that the excluded subgroup has less antitumor benefit.",
+     "source_ids": [
+      "CAPI-LABEL"
+     ],
+     "status": "safety_review",
+     "text": "Resolve uncontrolled glucose abnormalities and clinically important rash/diarrhea risk before enrollment; define drug-specific thresholds."
+    }
+   ],
+   "inclusion": [
+    {
+     "id": "capivasertib__unselected.inclusion.disease",
+     "purpose": "scope",
+     "reason": "The user-defined parent population; biomarker refinements appear below.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "evidence_supported",
+     "text": "HR-positive, HER2-negative metastatic breast cancer."
+    },
+    {
+     "id": "capivasertib__unselected.inclusion.post_cdk",
+     "purpose": "scope",
+     "reason": "Required project scope. Some reference trials contain broader prior-treatment populations.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "design_assumption",
+     "text": "Document progression on endocrine therapy plus a CDK4/6 inhibitor in the advanced-disease setting."
+    },
+    {
+     "id": "capivasertib__unselected.inclusion.selection",
+     "purpose": "efficacy",
+     "reason": "Defines this candidate population; evidence strength is recorded separately.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "evidence_supported",
+     "text": "Allow altered and non-altered tumors; require testing and prespecified biomarker strata."
+    },
+    {
+     "id": "capivasertib__unselected.inclusion.consent",
+     "purpose": "design",
+     "reason": "Operational protocol proposal; age, sex and endocrine requirements need regimen-specific confirmation.",
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "status": "design_assumption",
+     "text": "Adults able to provide informed consent; document menopausal/ovarian-suppression and reproductive requirements for the selected regimen."
+    }
+   ],
+   "option_id": "capivasertib__unselected",
+   "population": "Pathway-unselected research population",
+   "pros": [
+    {
+     "id": "capivasertib__unselected.pros.1",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "An explicit cohort definition permits a prespecified analysis for this treatment and comparator."
+    },
+    {
+     "id": "capivasertib__unselected.pros.2",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Can study both biomarker strata and broaden recruitment while retaining alteration testing."
+    },
+    {
+     "id": "capivasertib__unselected.pros.3",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Can broaden recruitment and applicability; actual eligible-pool size has not been estimated."
+    }
+   ],
+   "protocol_pending": [
+    {
+     "id": "capivasertib__unselected.protocol_pending.1",
+     "purpose": null,
+     "source_ids": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ],
+     "text": "Finalize assay/variant definitions, prior-agent/line limits and disease-assessment rules against the source protocol."
+    },
+    {
+     "id": "capivasertib__unselected.protocol_pending.2",
+     "purpose": null,
+     "source_ids": [
+      "FDA-LABS",
+      "FDA-WASHOUT"
+     ],
+     "text": "Specify justified laboratory thresholds, recovery and washout periods, concomitant medicines and reproductive precautions."
+    },
+    {
+     "id": "capivasertib__unselected.protocol_pending.3",
+     "purpose": null,
+     "source_ids": [
+      "FDA-PS",
+      "FDA-CNS"
+     ],
+     "text": "Set a reasoned performance-status policy and CNS criteria; do not automatically exclude all stable brain metastases."
+    }
+   ],
+   "references": [
+    {
+     "source_id": "CAPITELLO",
+     "supports": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ]
+    },
+    {
+     "source_id": "CAPI-LABEL",
+     "supports": [
+      "CAPITELLO",
+      "CAPI-LABEL"
+     ]
+    }
+   ],
+   "unclassified_criteria": []
+  }
+ ],
+ "provenance": {
+  "agent": "demo",
+  "created": "2026-10-30T09:12:44+00:00",
+  "model": "curated",
+  "tools": [
+   "population_library"
+  ]
+ },
+ "recommendation": {
+  "defense": [
+   {
+    "purpose": null,
+    "source_ids": [
+     "CAPITELLO",
+     "CAPI-LABEL"
+    ],
+    "text": "Randomized PFS benefit was demonstrated in the pathway-altered population. Its aggregate HR is not an exclusively post-CDK4/6 estimate."
+   }
+  ],
+  "option_id": "capivasertib__pathway"
+ },
+ "trial": {
+  "case_id": "capivasertib",
+  "condition": "HR+/HER2− metastatic breast cancer after progression on endocrine therapy plus a CDK4/6 inhibitor",
+  "drug": "Capivasertib + fulvestrant",
+  "line_of_therapy": "post-CDK4/6",
+  "nct_id": null,
+  "phase": "phase 2/3 setting",
+  "primary_endpoint": "PFS",
+  "source_trial_names": [
+   "CAPItello-291"
+  ]
+ }
+}

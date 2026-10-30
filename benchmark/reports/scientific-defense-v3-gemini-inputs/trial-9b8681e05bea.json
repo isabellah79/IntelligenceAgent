@@ -1,0 +1,730 @@
+{
+ "options": [
+  {
+   "axes": [
+    "Biomarker selection"
+   ],
+   "cons": [
+    {
+     "id": "elacestrant__esr1.cons.1",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "Subgroup benefit does not establish a predictive interaction, the optimal cohort, or superiority over other active treatments."
+    },
+    {
+     "id": "elacestrant__esr1.cons.2",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "The biomarker alone does not identify every patient who will benefit; prior endocrine sensitivity and early progression still need characterization."
+    }
+   ],
+   "defense": [
+    {
+     "id": "elacestrant__esr1.benefit",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "Randomized PFS benefit versus standard endocrine monotherapy was demonstrated in the ESR1-mutated population; this does not establish superiority over other active regimens."
+    }
+   ],
+   "estimates": {
+    "eligible_share": {
+     "reason": "No population-prevalence estimate is supplied.",
+     "status": "unavailable"
+    },
+    "endpoint_forecast": {
+     "assumed_hr": 0.55,
+     "comparator": "Fulvestrant or aromatase inhibitor",
+     "interpretation": "A trial-statistic illustration, not a patient-benefit probability or ranking of optimal populations.",
+     "method_a": 0.5227744249483388,
+     "method_b": 0.9883154504324718,
+     "reason": null,
+     "score": 0.7555449376904053,
+     "score_type": "Provisional A/B endpoint score",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "available",
+     "text": "Published reference effect used as a hypothetical true effect"
+    }
+   },
+   "evidence_context": {
+    "note": null,
+    "status": "reference",
+    "transfer": "direct"
+   },
+   "exclusion": [
+    {
+     "id": "elacestrant__esr1.exclusion.outside_scope",
+     "purpose": "scope",
+     "reason": "Keeps the candidate inside the parent research question.",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude disease outside the defined HR+/HER2− metastatic setting."
+    },
+    {
+     "id": "elacestrant__esr1.exclusion.urgent_instability",
+     "purpose": "safety",
+     "reason": "Requires clinical adjudication rather than an anatomical blanket exclusion.",
+     "source_ids": [
+      "ABC"
+     ],
+     "status": "safety_review",
+     "text": "Exclude urgent organ compromise that makes the protocol's treatment or assessment schedule inappropriate; liver metastases alone are not visceral crisis."
+    },
+    {
+     "id": "elacestrant__esr1.exclusion.unresolved_safety",
+     "purpose": "safety",
+     "reason": "Safety screening is not evidence that the excluded subgroup has less antitumor benefit.",
+     "source_ids": [
+      "EMERALD"
+     ],
+     "status": "safety_review",
+     "text": "Resolve clinically important regimen-specific contraindications and interacting medicines before enrollment."
+    }
+   ],
+   "inclusion": [
+    {
+     "id": "elacestrant__esr1.inclusion.disease",
+     "purpose": "scope",
+     "reason": "The user-defined parent population; biomarker refinements appear below.",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "HR-positive, HER2-negative metastatic breast cancer."
+    },
+    {
+     "id": "elacestrant__esr1.inclusion.post_cdk",
+     "purpose": "scope",
+     "reason": "Required project scope. Some reference trials contain broader prior-treatment populations.",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "design_assumption",
+     "text": "Document progression on endocrine therapy plus a CDK4/6 inhibitor in the advanced-disease setting."
+    },
+    {
+     "id": "elacestrant__esr1.inclusion.selection",
+     "purpose": "efficacy",
+     "reason": "Defines this candidate population; evidence strength is recorded separately.",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "Require a qualifying ESR1 mutation confirmed by a specified assay."
+    },
+    {
+     "id": "elacestrant__esr1.inclusion.prior_lines",
+     "purpose": "evidence_alignment",
+     "reason": "Keeps the proposed treatment history close to the published population.",
+     "source_ids": [
+      "EMERALD"
+     ],
+     "status": "evidence_supported",
+     "text": "Specify 1–2 prior endocrine lines and no more than one prior chemotherapy regimen, following EMERALD's reported history."
+    },
+    {
+     "id": "elacestrant__esr1.inclusion.consent",
+     "purpose": "design",
+     "reason": "Operational protocol proposal; age, sex and endocrine requirements need regimen-specific confirmation.",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "design_assumption",
+     "text": "Adults able to provide informed consent; document menopausal/ovarian-suppression and reproductive requirements for the selected regimen."
+    }
+   ],
+   "option_id": "elacestrant__esr1",
+   "population": "ESR1-mutated reference population",
+   "pros": [
+    {
+     "id": "elacestrant__esr1.pros.1",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "An explicit cohort definition permits a prespecified analysis for this treatment and comparator."
+    },
+    {
+     "id": "elacestrant__esr1.pros.2",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "Retains the studied ESR1-selected population without imposing an unconfirmed prior-duration threshold."
+    },
+    {
+     "id": "elacestrant__esr1.pros.3",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "Provides a starting population for evidence review, subject to the documented source-to-target differences."
+    }
+   ],
+   "protocol_pending": [
+    {
+     "id": "elacestrant__esr1.protocol_pending.1",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "Finalize assay/variant definitions, prior-agent/line limits and disease-assessment rules against the source protocol."
+    },
+    {
+     "id": "elacestrant__esr1.protocol_pending.2",
+     "purpose": null,
+     "source_ids": [
+      "FDA-LABS",
+      "FDA-WASHOUT"
+     ],
+     "text": "Specify justified laboratory thresholds, recovery and washout periods, concomitant medicines and reproductive precautions."
+    },
+    {
+     "id": "elacestrant__esr1.protocol_pending.3",
+     "purpose": null,
+     "source_ids": [
+      "FDA-PS",
+      "FDA-CNS"
+     ],
+     "text": "Set a reasoned performance-status policy and CNS criteria; do not automatically exclude all stable brain metastases."
+    }
+   ],
+   "references": [
+    {
+     "source_id": "EMERALD",
+     "supports": [
+      "EMERALD",
+      "ELAC-FDA"
+     ]
+    },
+    {
+     "source_id": "ELAC-FDA",
+     "supports": [
+      "EMERALD",
+      "ELAC-FDA"
+     ]
+    }
+   ],
+   "unclassified_criteria": []
+  },
+  {
+   "axes": [
+    "Prior endocrine duration"
+   ],
+   "cons": [
+    {
+     "id": "elacestrant__long_response.cons.1",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "text": "Subgroup benefit does not establish a predictive interaction, the optimal cohort, or superiority over other active treatments."
+    },
+    {
+     "id": "elacestrant__long_response.cons.2",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "text": "A mandatory duration threshold may exclude patients who could benefit; the subgroup estimate must not be treated as a confirmed improvement over the broader cohort."
+    },
+    {
+     "id": "elacestrant__long_response.cons.3",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "text": "The ≥12-month rule can exclude shorter-duration patients despite the absence of a confirmed predictive duration interaction."
+    },
+    {
+     "id": "elacestrant__long_response.cons.4",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "text": "A narrower rule may slow recruitment and reduce generalizability; subgroup-specific benefit needs validation."
+    }
+   ],
+   "defense": [
+    {
+     "id": "elacestrant__long_response.benefit",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "text": "A larger observed relative effect was reported in this post hoc subgroup. No multiplicity adjustment or proven predictive duration interaction is supplied."
+    }
+   ],
+   "estimates": {
+    "eligible_share": {
+     "reason": "No population-prevalence estimate is supplied.",
+     "status": "unavailable"
+    },
+    "endpoint_forecast": {
+     "assumed_hr": 0.41,
+     "comparator": "Fulvestrant or aromatase inhibitor",
+     "interpretation": "A trial-statistic illustration, not a patient-benefit probability or ranking of optimal populations.",
+     "method_a": 0.5024753081896103,
+     "method_b": 0.9999930219515099,
+     "reason": null,
+     "score": 0.7512341650705601,
+     "score_type": "Provisional A/B endpoint score",
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "status": "available",
+     "text": "Published reference effect used as a hypothetical true effect"
+    }
+   },
+   "evidence_context": {
+    "note": null,
+    "status": "exploratory",
+    "transfer": "direct"
+   },
+   "exclusion": [
+    {
+     "id": "elacestrant__long_response.exclusion.outside_scope",
+     "purpose": "scope",
+     "reason": "Keeps the candidate inside the parent research question.",
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude disease outside the defined HR+/HER2− metastatic setting."
+    },
+    {
+     "id": "elacestrant__long_response.exclusion.urgent_instability",
+     "purpose": "safety",
+     "reason": "Requires clinical adjudication rather than an anatomical blanket exclusion.",
+     "source_ids": [
+      "ABC"
+     ],
+     "status": "safety_review",
+     "text": "Exclude urgent organ compromise that makes the protocol's treatment or assessment schedule inappropriate; liver metastases alone are not visceral crisis."
+    },
+    {
+     "id": "elacestrant__long_response.exclusion.unresolved_safety",
+     "purpose": "safety",
+     "reason": "Safety screening is not evidence that the excluded subgroup has less antitumor benefit.",
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "status": "safety_review",
+     "text": "Resolve clinically important regimen-specific contraindications and interacting medicines before enrollment."
+    }
+   ],
+   "inclusion": [
+    {
+     "id": "elacestrant__long_response.inclusion.disease",
+     "purpose": "scope",
+     "reason": "The user-defined parent population; biomarker refinements appear below.",
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "status": "evidence_supported",
+     "text": "HR-positive, HER2-negative metastatic breast cancer."
+    },
+    {
+     "id": "elacestrant__long_response.inclusion.post_cdk",
+     "purpose": "scope",
+     "reason": "Required project scope. Some reference trials contain broader prior-treatment populations.",
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "status": "design_assumption",
+     "text": "Document progression on endocrine therapy plus a CDK4/6 inhibitor in the advanced-disease setting."
+    },
+    {
+     "id": "elacestrant__long_response.inclusion.selection",
+     "purpose": "efficacy",
+     "reason": "Defines this candidate population; evidence strength is recorded separately.",
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "status": "evidence_supported",
+     "text": "Require a qualifying ESR1 mutation."
+    },
+    {
+     "id": "elacestrant__long_response.inclusion.prior_lines",
+     "purpose": "evidence_alignment",
+     "reason": "Retains the source treatment-history limits while varying the stated population axis.",
+     "source_ids": [
+      "EMERALD"
+     ],
+     "status": "evidence_supported",
+     "text": "Specify 1–2 prior endocrine lines and no more than one prior chemotherapy regimen, following EMERALD's reported history."
+    },
+    {
+     "id": "elacestrant__long_response.inclusion.prior_duration",
+     "purpose": "efficacy",
+     "reason": "This threshold defines the published post hoc subgroup; it is not a confirmed requirement for benefit.",
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "status": "exploratory",
+     "text": "Require at least 12 months on the preceding endocrine + CDK4/6 regimen."
+    },
+    {
+     "id": "elacestrant__long_response.inclusion.consent",
+     "purpose": "design",
+     "reason": "Operational protocol proposal; age, sex and endocrine requirements need regimen-specific confirmation.",
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "status": "design_assumption",
+     "text": "Adults able to provide informed consent; document menopausal/ovarian-suppression and reproductive requirements for the selected regimen."
+    }
+   ],
+   "option_id": "elacestrant__long_response",
+   "population": "ESR1-mutated + longer prior endocrine benefit",
+   "pros": [
+    {
+     "id": "elacestrant__long_response.pros.1",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "text": "An explicit cohort definition permits a prespecified analysis for this treatment and comparator."
+    },
+    {
+     "id": "elacestrant__long_response.pros.2",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "text": "Has a published duration-defined subgroup signal to motivate a prospective enrichment test."
+    },
+    {
+     "id": "elacestrant__long_response.pros.3",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "text": "Makes an enrichment or generalizability hypothesis explicit and testable; a stronger treatment effect is not assumed."
+    }
+   ],
+   "protocol_pending": [
+    {
+     "id": "elacestrant__long_response.protocol_pending.1",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD-DURATION"
+     ],
+     "text": "Finalize assay/variant definitions, prior-agent/line limits and disease-assessment rules against the source protocol."
+    },
+    {
+     "id": "elacestrant__long_response.protocol_pending.2",
+     "purpose": null,
+     "source_ids": [
+      "FDA-LABS",
+      "FDA-WASHOUT"
+     ],
+     "text": "Specify justified laboratory thresholds, recovery and washout periods, concomitant medicines and reproductive precautions."
+    },
+    {
+     "id": "elacestrant__long_response.protocol_pending.3",
+     "purpose": null,
+     "source_ids": [
+      "FDA-PS",
+      "FDA-CNS"
+     ],
+     "text": "Set a reasoned performance-status policy and CNS criteria; do not automatically exclude all stable brain metastases."
+    }
+   ],
+   "references": [
+    {
+     "source_id": "EMERALD-DURATION",
+     "supports": [
+      "EMERALD-DURATION"
+     ]
+    }
+   ],
+   "unclassified_criteria": []
+  },
+  {
+   "axes": [
+    "Broader biomarker eligibility"
+   ],
+   "cons": [
+    {
+     "id": "elacestrant__unselected.cons.1",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "Subgroup benefit does not establish a predictive interaction, the optimal cohort, or superiority over other active treatments."
+    },
+    {
+     "id": "elacestrant__unselected.cons.2",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "The overall-population result cannot establish benefit specifically in ESR1-wild-type tumors; the cited indication is ESR1-selected."
+    }
+   ],
+   "defense": [
+    {
+     "id": "elacestrant__unselected.benefit",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "The trial reported an overall-population PFS result. It does not establish benefit specifically in ESR1-wild-type disease."
+    }
+   ],
+   "estimates": {
+    "eligible_share": {
+     "reason": "No population-prevalence estimate is supplied.",
+     "status": "unavailable"
+    },
+    "endpoint_forecast": {
+     "assumed_hr": 0.7,
+     "comparator": "Fulvestrant or aromatase inhibitor",
+     "interpretation": "A trial-statistic illustration, not a patient-benefit probability or ranking of optimal populations.",
+     "method_a": 0.494897427831781,
+     "method_b": 0.7129667614053272,
+     "reason": null,
+     "score": 0.6039320946185541,
+     "score_type": "Provisional A/B endpoint score",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "available",
+     "text": "Published reference effect used as a hypothetical true effect"
+    }
+   },
+   "evidence_context": {
+    "note": "A research alternative beyond the cited ESR1-mutated indication; requires separate scientific and regulatory justification.",
+    "status": "broader",
+    "transfer": "direct"
+   },
+   "exclusion": [
+    {
+     "id": "elacestrant__unselected.exclusion.outside_scope",
+     "purpose": "scope",
+     "reason": "Keeps the candidate inside the parent research question.",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "Exclude disease outside the defined HR+/HER2− metastatic setting."
+    },
+    {
+     "id": "elacestrant__unselected.exclusion.urgent_instability",
+     "purpose": "safety",
+     "reason": "Requires clinical adjudication rather than an anatomical blanket exclusion.",
+     "source_ids": [
+      "ABC"
+     ],
+     "status": "safety_review",
+     "text": "Exclude urgent organ compromise that makes the protocol's treatment or assessment schedule inappropriate; liver metastases alone are not visceral crisis."
+    },
+    {
+     "id": "elacestrant__unselected.exclusion.unresolved_safety",
+     "purpose": "safety",
+     "reason": "Safety screening is not evidence that the excluded subgroup has less antitumor benefit.",
+     "source_ids": [
+      "EMERALD"
+     ],
+     "status": "safety_review",
+     "text": "Resolve clinically important regimen-specific contraindications and interacting medicines before enrollment."
+    }
+   ],
+   "inclusion": [
+    {
+     "id": "elacestrant__unselected.inclusion.disease",
+     "purpose": "scope",
+     "reason": "The user-defined parent population; biomarker refinements appear below.",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "HR-positive, HER2-negative metastatic breast cancer."
+    },
+    {
+     "id": "elacestrant__unselected.inclusion.post_cdk",
+     "purpose": "scope",
+     "reason": "Required project scope. Some reference trials contain broader prior-treatment populations.",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "design_assumption",
+     "text": "Document progression on endocrine therapy plus a CDK4/6 inhibitor in the advanced-disease setting."
+    },
+    {
+     "id": "elacestrant__unselected.inclusion.selection",
+     "purpose": "efficacy",
+     "reason": "Defines this candidate population; evidence strength is recorded separately.",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "evidence_supported",
+     "text": "Allow ESR1-mutated and non-mutated disease; record status and prespecify strata."
+    },
+    {
+     "id": "elacestrant__unselected.inclusion.prior_lines",
+     "purpose": "evidence_alignment",
+     "reason": "Retains the source treatment-history limits while varying the stated population axis.",
+     "source_ids": [
+      "EMERALD"
+     ],
+     "status": "evidence_supported",
+     "text": "Specify 1–2 prior endocrine lines and no more than one prior chemotherapy regimen, following EMERALD's reported history."
+    },
+    {
+     "id": "elacestrant__unselected.inclusion.consent",
+     "purpose": "design",
+     "reason": "Operational protocol proposal; age, sex and endocrine requirements need regimen-specific confirmation.",
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "status": "design_assumption",
+     "text": "Adults able to provide informed consent; document menopausal/ovarian-suppression and reproductive requirements for the selected regimen."
+    }
+   ],
+   "option_id": "elacestrant__unselected",
+   "population": "ESR1-unselected research population",
+   "pros": [
+    {
+     "id": "elacestrant__unselected.pros.1",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "An explicit cohort definition permits a prespecified analysis for this treatment and comparator."
+    },
+    {
+     "id": "elacestrant__unselected.pros.2",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "Allows recruitment across ESR1 strata and tests generalizability using a prespecified biomarker analysis."
+    },
+    {
+     "id": "elacestrant__unselected.pros.3",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "Can broaden recruitment and applicability; actual eligible-pool size has not been estimated."
+    }
+   ],
+   "protocol_pending": [
+    {
+     "id": "elacestrant__unselected.protocol_pending.1",
+     "purpose": null,
+     "source_ids": [
+      "EMERALD",
+      "ELAC-FDA"
+     ],
+     "text": "Finalize assay/variant definitions, prior-agent/line limits and disease-assessment rules against the source protocol."
+    },
+    {
+     "id": "elacestrant__unselected.protocol_pending.2",
+     "purpose": null,
+     "source_ids": [
+      "FDA-LABS",
+      "FDA-WASHOUT"
+     ],
+     "text": "Specify justified laboratory thresholds, recovery and washout periods, concomitant medicines and reproductive precautions."
+    },
+    {
+     "id": "elacestrant__unselected.protocol_pending.3",
+     "purpose": null,
+     "source_ids": [
+      "FDA-PS",
+      "FDA-CNS"
+     ],
+     "text": "Set a reasoned performance-status policy and CNS criteria; do not automatically exclude all stable brain metastases."
+    }
+   ],
+   "references": [
+    {
+     "source_id": "EMERALD",
+     "supports": [
+      "EMERALD",
+      "ELAC-FDA"
+     ]
+    },
+    {
+     "source_id": "ELAC-FDA",
+     "supports": [
+      "EMERALD",
+      "ELAC-FDA"
+     ]
+    }
+   ],
+   "unclassified_criteria": []
+  }
+ ],
+ "provenance": {
+  "agent": "demo",
+  "created": "2026-10-30T09:09:58+00:00",
+  "model": "curated",
+  "tools": [
+   "population_library"
+  ]
+ },
+ "recommendation": {
+  "defense": [
+   {
+    "purpose": null,
+    "source_ids": [
+     "EMERALD",
+     "ELAC-FDA"
+    ],
+    "text": "Randomized PFS benefit versus standard endocrine monotherapy was demonstrated in the ESR1-mutated population; this does not establish superiority over other active regimens."
+   }
+  ],
+  "option_id": "elacestrant__esr1"
+ },
+ "trial": {
+  "case_id": "elacestrant",
+  "condition": "HR+/HER2− metastatic breast cancer after progression on endocrine therapy plus a CDK4/6 inhibitor",
+  "drug": "Elacestrant",
+  "line_of_therapy": "post-CDK4/6",
+  "nct_id": null,
+  "phase": "phase 2/3 setting",
+  "primary_endpoint": "PFS",
+  "source_trial_names": [
+   "EMERALD",
+   "EMERALD · post hoc duration subgroup"
+  ]
+ }
+}

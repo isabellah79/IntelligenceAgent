@@ -1,0 +1,5 @@
+benchmark/reports/*.html linguist-generated=true
+benchmark/reports/*.md linguist-generated=true
+benchmark/reports/*.json linguist-generated=true
+benchmark/reports/*.png linguist-generated=true
+benchmark/reports/*-inputs/*.json linguist-generated=true
